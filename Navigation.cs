@@ -61,5 +61,19 @@ namespace TwenstyFirstJan
             this.Hide();
             l1.Show();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            RestockScreen r1 = new RestockScreen();
+            this.Hide();
+            r1.Show();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Form1 fo1 = new Form1();
+            this.Hide();
+            fo1.Show();
+        }
     }
 }
