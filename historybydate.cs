@@ -43,17 +43,15 @@ namespace TwenstyFirstJan
 
             if (String.IsNullOrEmpty(textBox4.Text))
             {
-                cmd = new SqlCommand("select p.companyName , p.partName , p.modelName , p.price*s.tquantity as [total price] , s.tquantity from [dbo].[product_table] as p   join (select sum(sold_quantity) as [tquantity], Id from [dbo].[log_table] group by Id ) as s on p.productId = s.Id  where p.partName like '%" + textBox2.Text.ToString() + "%' and p.companyName like '%" + textBox1.Text.ToString() + "%' and p.modelName like '%" + textBox3.Text.ToString() + "%' and e.sold_date between @d1 and @d2 ;", cnn);
-                cmd.Parameters.AddWithValue("@d2", dateTimePicker2.Value);
-                cmd.Parameters.AddWithValue("@d1", dateTimePicker1.Value);
+                cmd = new SqlCommand("select p.companyName , p.partName , p.modelName , p.price*s.tquantity as [total price] , s.tquantity from [dbo].[product_table] as p   join (select sum(sold_quantity) as [tquantity], Id ,sold_date from [dbo].[log_table] group by Id , sold_date ) as s on p.productId = s.Id  where p.partName like '%" + textBox2.Text.ToString() + "%' and p.companyName like '%" + textBox1.Text.ToString() + "%' and p.modelName like '%" + textBox3.Text.ToString() + "%' and s.sold_date between '" + dateTimePicker1.Value.Date.ToString() + "' and '" + dateTimePicker2.Value.Date.ToString() + "';", cnn);
+                
             }
             else
             {
-                cmd = new SqlCommand("select p.companyName , p.partName , p.modelName , p.price*s.tquantity as [total price] , s.tquantity from [dbo].[product_table] as p   join (select sum(sold_quantity) as [tquantity], Id from [dbo].[log_table] group by Id ) as s on p.productId = s.Id  where p.partName like '%" + textBox2.Text.ToString() + "%' and p.companyName like '%" + textBox1.Text.ToString() + "%' and p.modelName like '%" + textBox3.Text.ToString() + "%' and e.invoice = @inv and p.sold_date between @d1 and @d2 ;", cnn);
+                cmd = new SqlCommand("select p.companyName , p.partName , p.modelName , p.price*s.tquantity as [total price] , s.tquantity from [dbo].[product_table] as p   join (select sum(sold_quantity) as [tquantity], Id ,invoice from [dbo].[log_table] group by Id ,invoice ) as s on p.productId = s.Id  where p.partName like '%" + textBox2.Text.ToString() + "%' and p.companyName like '%" + textBox1.Text.ToString() + "%' and p.modelName like '%" + textBox3.Text.ToString() + "%' and s.invoice = @inv ;", cnn);
                 int invvalue = int.Parse(textBox4.Text);
                 cmd.Parameters.AddWithValue("@inv", invvalue);
-                cmd.Parameters.AddWithValue("@d1", dateTimePicker1.Value);
-                cmd.Parameters.AddWithValue("@d2", dateTimePicker2.Value);
+                
             }
 
 
@@ -76,6 +74,17 @@ namespace TwenstyFirstJan
             sqd.Fill(dtbl);
             dataGridView1.DataSource = dtbl;
             cnn.Close();
+        }
+
+        private void historybydate_Load(object sender, EventArgs e)
+        {
+            dateTimePicker1.CustomFormat = "yyyy-MM-dd";
+            dateTimePicker1.Format = DateTimePickerFormat.Custom;
+            dateTimePicker1.Value = dateTimePicker1.MinDate;
+
+            dateTimePicker2.CustomFormat = "yyyy-MM-dd";
+            dateTimePicker2.Format = DateTimePickerFormat.Custom;
+            dateTimePicker2.Value = DateTime.Now;
         }
     }
 }

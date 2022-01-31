@@ -31,7 +31,7 @@ namespace TwenstyFirstJan
             SqlConnection sqlconn;
             connetionString = "Server = tcp:masamual.database.windows.net,1433; Initial Catalog = alidb; Persist Security Info = False; User ID = ali; Password = Adminaccount@101; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30; ";
             sqlconn = new SqlConnection(connetionString);
-            string sqlquery = "Select productID as 'Product ID',companyName as 'Company Name', partName as 'Part Name', modelName as 'Model Name', stock_quantity as 'Quantity left in Stock' from [dbo].[product_table] ";
+            string sqlquery = "Select productID as 'Product ID',companyName as 'Company Name', partName as 'Part Name', modelName as 'Model Name', stock_quantity as 'Quantity left in Stock', maxStock as 'Max Stock' from [dbo].[product_table] ";
             sqlconn.Open();
             SqlCommand sqlcomm = new SqlCommand(sqlquery, sqlconn);
             SqlDataAdapter sdr = new SqlDataAdapter(sqlcomm);
@@ -75,7 +75,7 @@ namespace TwenstyFirstJan
             SqlConnection sqlconn;
             connetionString = "Server = tcp:masamual.database.windows.net,1433; Initial Catalog = alidb; Persist Security Info = False; User ID = ali; Password = Adminaccount@101; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30; ";
             sqlconn = new SqlConnection(connetionString);
-            string sqlquery = "select productId, companyName as 'Company Name', partName as 'Part Name', modelName as 'Model Name', stock_quantity as 'Quantity left in Stock' from product_table where companyName like '%" + companytextbox.Text.ToString().ToLower() + "%' and partName like '%" + partnametextbox.Text.ToString().ToLower() + "%' and modelName like '%" + modelno.Text.ToString().ToLower() + "%'";
+            string sqlquery = "select productId, companyName as 'Company Name', partName as 'Part Name', modelName as 'Model Name', stock_quantity as 'Quantity left in Stock' , maxStock as 'Max Stock' from product_table where companyName like '%" + companytextbox.Text.ToString().ToLower() + "%' and partName like '%" + partnametextbox.Text.ToString().ToLower() + "%' and modelName like '%" + modelno.Text.ToString().ToLower() + "%'";
             sqlconn.Open();
             SqlCommand sqlcomm = new SqlCommand(sqlquery,sqlconn);
 
@@ -134,6 +134,14 @@ namespace TwenstyFirstJan
 
             RestockScreen r = new RestockScreen();
             r.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Navigation newForm = new Navigation();
+
+            newForm.Show();
             this.Hide();
         }
 
