@@ -15,6 +15,8 @@ namespace TwenstyFirstJan
 {
     public partial class Billing : Form
     {
+        DataGridView d1 = new DataGridView();
+
         public Billing()
         {
             InitializeComponent();
@@ -57,6 +59,8 @@ namespace TwenstyFirstJan
             sdr.Fill(dt);
             dataGridView1.DataSource = dt;
 
+            
+            d1.DataSource = dt;
             textBox5.Text = "0334-3669215";
 
             // method 1
@@ -172,7 +176,7 @@ namespace TwenstyFirstJan
             
             printPreviewDialog1.Document = printDocument1;
             //printPreviewDialog1.ShowDialog();
-            
+            /*
             int height = dataGridView1.Height;
             dataGridView1.Height = dataGridView1.RowCount * dataGridView1.RowTemplate.Height * 2;
             bitmap = new Bitmap(dataGridView1.Width, dataGridView1.Height);
@@ -180,8 +184,20 @@ namespace TwenstyFirstJan
             printPreviewDialog1.PrintPreviewControl.Zoom = 1;
             printPreviewDialog1.ShowDialog();
             dataGridView1.Height = height;
+            */
+            
+            int height = dataGridView1.Height;
+            dataGridView1.Height = 37 + dataGridView1.RowCount * dataGridView1.RowTemplate.Height * 4;
+            bitmap = new Bitmap(dataGridView1.Width, dataGridView1.Height);
+            dataGridView1.DrawToBitmap(bitmap, new Rectangle(0, 150, dataGridView1.Width, dataGridView1.Height));
+            printPreviewDialog1.PrintPreviewControl.Zoom = 1;
+            printPreviewDialog1.ShowDialog();
+            dataGridView1.Height = height;
+            //if (printPreviewDialog1)
+            {
 
-            move_to_log();
+            }
+            //move_to_log();
            
             
         }
@@ -205,6 +221,7 @@ namespace TwenstyFirstJan
             e.Graphics.DrawString("Total Amount:" + textBox6.Text, new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new Point(500, 630));
             e.Graphics.DrawString(Signature.Text, new Font("Arial", 12), Brushes.Black, new Point(25, 630));
             e.Graphics.DrawString(DashLabel.Text, new Font("Arial", 12), Brushes.Black, new Point(25, 650));
+            
         }
 
         private void DashLabel_Click(object sender, EventArgs e)

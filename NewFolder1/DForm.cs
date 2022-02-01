@@ -36,7 +36,15 @@ namespace TwenstyFirstJan.NewFolder1
         }
         private void tempbutton_Click(object sender, EventArgs e)
         {
-            qt = int.Parse(textBox2.Text);
+            //qt = 1;
+            if (String.IsNullOrEmpty(textBox2.Text))
+            {
+                qt = 1;
+            }
+            else
+            {
+                qt = int.Parse(textBox2.Text);
+            }
             //public void checkquantity(){   }
             int stock=chkqt();
             // int priceval = int.Parse(textBox1.Text);
