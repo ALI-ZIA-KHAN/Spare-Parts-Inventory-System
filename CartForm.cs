@@ -35,6 +35,9 @@ namespace TwenstyFirstJan
 
         private void CartForm_Load(object sender, EventArgs e)
         {
+            this.TopMost = true;
+           
+            this.WindowState = FormWindowState.Maximized;
             loaddata();
         }
 

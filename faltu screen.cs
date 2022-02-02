@@ -21,5 +21,10 @@ namespace TwenstyFirstJan
         {
 
         }
+
+        private void faltu_screen_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

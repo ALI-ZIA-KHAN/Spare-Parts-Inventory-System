@@ -55,19 +55,7 @@ namespace TwenstyFirstJan
             }
 
 
-            /*
-            if (String.IsNullOrEmpty(textBox4.Text))
-            {
-                cmd = new SqlCommand("select p.partName as [Part Name], p.companyName as [Company Name], p.modelName as [Model Name], p.stock_quantity as [Qty in Stock], p.price as Price, e. invoice as [Invoice no.], e.sold_price as [Sold Price], e.sold_quantity as [Sold Quantity], e.sold_date as Date, e.customer_name as [Customer Name], e.customer_address as [Customer Address] from product_table p, log_table e where (e.invoice between 1 and 99999 and p.productID = e.id) and(p.partName like '%" + textBox1.Text + "%' and p.companyName like '%" + textBox2.Text + "%' and p.modelName like '%" + textBox3.Text + "%') ;", cnn);
-            }
-            else
-            {
-                cmd = new SqlCommand("select p.partName as [Part Name], p.companyName as [Company Name], p.modelName as [Model Name], p.stock_quantity as [Qty in Stock], p.price as Price, e. invoice as [Invoice no.], e.sold_price as [Sold Price], e.sold_quantity as [Sold Quantity], e.sold_date as Date, e.customer_name as [Customer Name], e.customer_address as [Customer Address] from product_table p, log_table e where (e.invoice = @inv and p.productID = e.id) and(p.partName like '%" + textBox1.Text + "%' and p.companyName like '%" + textBox2.Text + "%' and p.modelName like '%" + textBox3.Text + "%') ;", cnn);
-                int invvalue = int.Parse(textBox4.Text);
-                cmd.Parameters.AddWithValue("@inv", invvalue);
-            }
-            */
-
+            
 
             SqlDataAdapter sqd = new SqlDataAdapter(cmd);
             DataTable dtbl = new DataTable();
@@ -85,6 +73,11 @@ namespace TwenstyFirstJan
             dateTimePicker2.CustomFormat = "yyyy-MM-dd";
             dateTimePicker2.Format = DateTimePickerFormat.Custom;
             dateTimePicker2.Value = DateTime.Now;
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

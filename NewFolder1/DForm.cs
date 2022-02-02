@@ -36,7 +36,14 @@ namespace TwenstyFirstJan.NewFolder1
         }
         private void tempbutton_Click(object sender, EventArgs e)
         {
-            qt = int.Parse(textBox2.Text);
+            if (String.IsNullOrEmpty(textBox2.Text))
+            {
+                qt = 1;
+            }
+            else
+            {
+                qt = int.Parse(textBox2.Text);
+            }
             //public void checkquantity(){   }
             int stock=chkqt();
             // int priceval = int.Parse(textBox1.Text);
@@ -61,13 +68,22 @@ namespace TwenstyFirstJan.NewFolder1
                 sdr.Fill(dt);
                 MessageBox.Show("Item Added to Cart!");
                 this.Close();
+                
+
             }
+            Search_Screen s2 = new Search_Screen();
+            this.Hide();
+            s2.Show();
+            
         }
 
         private void backbutton_Click(object sender, EventArgs e)
         {
+            
             Search_Screen s2 = new Search_Screen();
             s2.Show();
+            this.Hide();
+            
         }
 
         private void DForm_Load(object sender, EventArgs e)

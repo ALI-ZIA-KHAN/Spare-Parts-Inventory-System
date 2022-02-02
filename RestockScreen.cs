@@ -145,14 +145,12 @@ namespace TwenstyFirstJan
             this.Hide();
         }
 
-
-        /*for (int i=0; i<=dataGridView1.RowCount - 1; i++)
+        private void label2_Click(object sender, EventArgs e)
         {
-            if(Convert.ToBoolean(dataGridView1.Rows[i].Cells["chk"].Value)== true)
-            {
 
-            }
-        }*/
+        }
+
+
     }
 
 }

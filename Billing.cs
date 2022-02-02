@@ -76,7 +76,7 @@ namespace TwenstyFirstJan
 
             dateTimePicker1.CustomFormat = "yyyy-MM-dd";
             dateTimePicker1.Format = DateTimePickerFormat.Custom;
-            dateTimePicker1.Value = dateTimePicker1.MinDate;
+            dateTimePicker1.Value = DateTime.Now;
             
             data_display();
         }
@@ -155,6 +155,10 @@ namespace TwenstyFirstJan
                 //this.Billing_Load();
                 
             }
+
+            Billing b2 = new Billing();
+            b2.Show();
+            this.Hide();
             
         }
 
@@ -162,19 +166,22 @@ namespace TwenstyFirstJan
         private void button2_Click(object sender, EventArgs e)
         {
             Navigation n2 = new Navigation();
-            this.Hide();
             n2.Show();
+            this.Hide();
+           
+
         }
         Bitmap bitmap;
         private void button3_Click(object sender, EventArgs e)
         {
-           
-            
+
+
+            this.SendToBack();
             printPreviewDialog1.Document = printDocument1;
             //printPreviewDialog1.ShowDialog();
             
             int height = dataGridView1.Height;
-            dataGridView1.Height = dataGridView1.RowCount * dataGridView1.RowTemplate.Height * 2;
+            dataGridView1.Height =37+dataGridView1.RowCount * dataGridView1.RowTemplate.Height * 4;
             bitmap = new Bitmap(dataGridView1.Width, dataGridView1.Height);
             dataGridView1.DrawToBitmap(bitmap, new Rectangle(0,150 , dataGridView1.Width, dataGridView1.Height));
             printPreviewDialog1.PrintPreviewControl.Zoom = 1;
@@ -200,11 +207,11 @@ namespace TwenstyFirstJan
             e.Graphics.DrawString("Address:" + textBox3.Text, new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new Point(25, 220));
             e.Graphics.DrawString("Invoice No:" + textBox2.Text, new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new Point(25, 240));
             e.Graphics.DrawString("Contact No:" + textBox5.Text, new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new Point(25, 260));
-            e.Graphics.DrawString(DashLabel.Text, new Font("Arial", 12), Brushes.Black, new Point(25, 280));
-            e.Graphics.DrawString(DashLabel.Text, new Font("Arial", 12), Brushes.Black, new Point(25, 600));
+      //      e.Graphics.DrawString(DashLabel.Text, new Font("Arial", 12), Brushes.Black, new Point(25, 280));
+       //    e.Graphics.DrawString(DashLabel.Text, new Font("Arial", 12), Brushes.Black, new Point(25, 600));
             e.Graphics.DrawString("Total Amount:" + textBox6.Text, new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new Point(500, 630));
-            e.Graphics.DrawString(Signature.Text, new Font("Arial", 12), Brushes.Black, new Point(25, 630));
-            e.Graphics.DrawString(DashLabel.Text, new Font("Arial", 12), Brushes.Black, new Point(25, 650));
+      //      e.Graphics.DrawString(Signature.Text, new Font("Arial", 12), Brushes.Black, new Point(25, 630));
+       //     e.Graphics.DrawString(DashLabel.Text, new Font("Arial", 12), Brushes.Black, new Point(25, 650));
         }
 
         private void DashLabel_Click(object sender, EventArgs e)
@@ -220,6 +227,11 @@ namespace TwenstyFirstJan
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

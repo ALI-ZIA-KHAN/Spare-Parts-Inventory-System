@@ -19,7 +19,6 @@ D:\TwenstyFirstJan\obj\Debug\TwenstyFirstJan.NewFolder1.DForm.resources
 D:\TwenstyFirstJan\obj\Debug\TwenstyFirstJan.Navigation.resources
 D:\TwenstyFirstJan\obj\Debug\TwenstyFirstJan.RestockScreen.resources
 D:\TwenstyFirstJan\obj\Debug\TwenstyFirstJan.faltu_screen.resources
-D:\TwenstyFirstJan\obj\Debug\TwenstyFirstJan.Resources.Final.resources
 D:\TwenstyFirstJan\bin\Debug\EntityFramework.dll
 D:\TwenstyFirstJan\bin\Debug\EntityFramework.SqlServer.dll
 D:\TwenstyFirstJan\bin\Debug\EntityFramework.xml
@@ -53,3 +52,4 @@ C:\Users\Shumail\sameed59\Spare-Parts-Inventory-System\obj\Debug\TwenstyFirstJan
 C:\Users\Shumail\sameed59\Spare-Parts-Inventory-System\obj\Debug\TwenstyFirstJan.csproj.CopyComplete
 C:\Users\Shumail\sameed59\Spare-Parts-Inventory-System\obj\Debug\TwenstyFirstJan.exe
 C:\Users\Shumail\sameed59\Spare-Parts-Inventory-System\obj\Debug\TwenstyFirstJan.pdb
+D:\TwenstyFirstJan\bin\Debug\System.Text.RegularExpressions.dll

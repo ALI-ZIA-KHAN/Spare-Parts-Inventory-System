@@ -19,6 +19,9 @@ namespace TwenstyFirstJan
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+
+
            if(textBox1.Text=="Sabri" && textBox2.Text == "12345")
             {
                 MessageBox.Show("Login Successfully");
@@ -56,6 +59,16 @@ namespace TwenstyFirstJan
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
         {
 
         }

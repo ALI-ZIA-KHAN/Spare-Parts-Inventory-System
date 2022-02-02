@@ -169,7 +169,7 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(593, 393);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(56, 40);
+            this.button2.Size = new System.Drawing.Size(43, 40);
             this.button2.TabIndex = 25;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -212,7 +212,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(661, 445);
+            this.ClientSize = new System.Drawing.Size(654, 461);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.button2);
@@ -232,9 +232,9 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "DForm";
             this.ShowIcon = false;
-            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DForm";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.DForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

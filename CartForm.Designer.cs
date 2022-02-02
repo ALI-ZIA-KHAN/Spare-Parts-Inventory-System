@@ -45,11 +45,11 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(46, 84);
+            this.dataGridView1.Location = new System.Drawing.Point(160, 135);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(704, 264);
+            this.dataGridView1.Size = new System.Drawing.Size(1020, 347);
             this.dataGridView1.TabIndex = 0;
             // 
             // deletebutton
@@ -57,9 +57,9 @@
             this.deletebutton.BackColor = System.Drawing.Color.MidnightBlue;
             this.deletebutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deletebutton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.deletebutton.Location = new System.Drawing.Point(607, 370);
+            this.deletebutton.Location = new System.Drawing.Point(952, 551);
             this.deletebutton.Name = "deletebutton";
-            this.deletebutton.Size = new System.Drawing.Size(129, 37);
+            this.deletebutton.Size = new System.Drawing.Size(151, 57);
             this.deletebutton.TabIndex = 1;
             this.deletebutton.Text = "Delete";
             this.deletebutton.UseVisualStyleBackColor = false;
@@ -70,9 +70,9 @@
             this.movetobillbutton.BackColor = System.Drawing.Color.MidnightBlue;
             this.movetobillbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.movetobillbutton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.movetobillbutton.Location = new System.Drawing.Point(232, 370);
+            this.movetobillbutton.Location = new System.Drawing.Point(591, 551);
             this.movetobillbutton.Name = "movetobillbutton";
-            this.movetobillbutton.Size = new System.Drawing.Size(201, 38);
+            this.movetobillbutton.Size = new System.Drawing.Size(201, 57);
             this.movetobillbutton.TabIndex = 2;
             this.movetobillbutton.Text = "Move to  Bill";
             this.movetobillbutton.UseVisualStyleBackColor = false;
@@ -83,9 +83,9 @@
             this.searchscreenbutton.BackColor = System.Drawing.Color.MidnightBlue;
             this.searchscreenbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchscreenbutton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.searchscreenbutton.Location = new System.Drawing.Point(52, 370);
+            this.searchscreenbutton.Location = new System.Drawing.Point(269, 551);
             this.searchscreenbutton.Name = "searchscreenbutton";
-            this.searchscreenbutton.Size = new System.Drawing.Size(174, 38);
+            this.searchscreenbutton.Size = new System.Drawing.Size(174, 57);
             this.searchscreenbutton.TabIndex = 3;
             this.searchscreenbutton.Text = "Search Screen";
             this.searchscreenbutton.UseVisualStyleBackColor = false;
@@ -98,7 +98,7 @@
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(742, 398);
+            this.button2.Location = new System.Drawing.Point(1095, 659);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(46, 40);
             this.button2.TabIndex = 31;
@@ -111,11 +111,10 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(10, 0, 3, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
             this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(10);
-            this.label1.Size = new System.Drawing.Size(808, 52);
-            this.label1.TabIndex = 32;
+            this.label1.Size = new System.Drawing.Size(1375, 48);
+            this.label1.TabIndex = 21;
             this.label1.Text = "Cart Items\r\n";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -124,7 +123,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1143, 749);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.searchscreenbutton);
@@ -133,6 +132,8 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "CartForm";
             this.Text = "CartForm";
+            this.TopMost = true;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.CartForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

@@ -312,6 +312,7 @@
             this.Controls.Add(this.label8);
             this.Name = "faltu_screen";
             this.Text = "faltu_screen";
+            this.Load += new System.EventHandler(this.faltu_screen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -32,6 +32,7 @@ namespace TwenstyFirstJan
             SqlConnection cnn;
             connetionString = "Server = tcp:masamual.database.windows.net,1433; Initial Catalog = alidb; Persist Security Info = False; User ID = ali; Password = Adminaccount@101; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30; ";
             cnn = new SqlConnection(connetionString);
+            
             cnn.Open();
             SqlCommand cmd = new SqlCommand();
 

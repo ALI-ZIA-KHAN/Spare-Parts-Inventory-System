@@ -23,18 +23,7 @@ namespace TwenstyFirstJan
         private void Search_Screen_Load(object sender, EventArgs e)
         {
             //bu();
-            /*
-            string mainconn = ConfigurationManager.ConnectionStrings["myCONN"].ConnectionString;
-            SqlConnection sqlconn = new SqlConnection(mainconn);
-            string sqlquery = "Select * from [dbo].[product_table] ";
-            sqlconn.Open();
-            SqlCommand sqlcomm = new SqlCommand(sqlquery, sqlconn);
-            SqlDataAdapter sdr = new SqlDataAdapter(sqlcomm);
-            DataTable dt = new DataTable();
-            sdr.Fill(dt);
-            dataGridView1.DataSource = dt;
-            sqlconn.Close();
-            */
+            
         }
 
         private void partnametextbox_TextChanged(object sender, EventArgs e)
@@ -94,6 +83,7 @@ namespace TwenstyFirstJan
             f2.textBox4.Text = this.dataGridView1.CurrentRow.Cells[2].Value.ToString();
             f2.textBox5.Text = this.dataGridView1.CurrentRow.Cells[0].Value.ToString();
             f2.Show();
+            this.Hide();
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -112,9 +102,10 @@ namespace TwenstyFirstJan
         private void restockbutton_Click(object sender, EventArgs e)
         {
             CartForm b2 = new CartForm();
-            this.Hide();
+           
             b2.Show();
-            
+            this.Hide();
+
         }
     }
 }

@@ -75,5 +75,14 @@ namespace TwenstyFirstJan
             this.Hide();
             fo1.Show();
         }
+
+        private void Navigation_Load(object sender, EventArgs e)
+        {
+            for (int i = 0; i < Application.OpenForms.Count; i++)
+            {
+                Application.OpenForms[i].WindowState = FormWindowState.Maximized;
+            }
+
+        }
     }
 }
