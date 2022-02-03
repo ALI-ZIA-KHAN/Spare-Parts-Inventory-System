@@ -215,13 +215,14 @@
             // label8
             // 
             this.label8.BackColor = System.Drawing.Color.MidnightBlue;
+            this.label8.Dock = System.Windows.Forms.DockStyle.Top;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Location = new System.Drawing.Point(1, -2);
+            this.label8.Location = new System.Drawing.Point(0, 0);
             this.label8.Margin = new System.Windows.Forms.Padding(10, 0, 3, 0);
             this.label8.Name = "label8";
-            this.label8.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
-            this.label8.Size = new System.Drawing.Size(1403, 61);
+            this.label8.Padding = new System.Windows.Forms.Padding(10);
+            this.label8.Size = new System.Drawing.Size(1365, 61);
             this.label8.TabIndex = 17;
             this.label8.Text = "Add Items";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

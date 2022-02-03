@@ -22,6 +22,8 @@ namespace TwenstyFirstJan
 
         private void RestockScreen_Load(object sender, EventArgs e)
         {
+            
+
 
             AddHeaderCheckBox();
             HeaderCheckBox.MouseClick += new MouseEventHandler(HeaderCheckBox_MouseClick);
