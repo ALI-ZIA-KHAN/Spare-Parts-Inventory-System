@@ -57,7 +57,7 @@ namespace TwenstyFirstJan
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Login l1 = new Login();
+            update l1 = new update();
             this.Hide();
             l1.Show();
         }

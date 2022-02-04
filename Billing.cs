@@ -188,14 +188,10 @@ namespace TwenstyFirstJan
             Navigation n2 = new Navigation();
             n2.Show();
             this.Hide();
-           
-
         }
         Bitmap bitmap;
         private void button3_Click(object sender, EventArgs e)
         {
-
-
             this.SendToBack();
             printPreviewDialog1.Document = printDocument1;
             //printPreviewDialog1.ShowDialog();
@@ -209,8 +205,6 @@ namespace TwenstyFirstJan
             dataGridView1.Height = height;
 
             move_to_log();
-           
-            
         }
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)

@@ -76,10 +76,8 @@ namespace TwenstyFirstJan.NewFolder1
             {
                 qt = int.Parse(textBox2.Text);
             }
-            //int stock=
+
             chkqt();
-            
-            
         }
 
         private void backbutton_Click(object sender, EventArgs e)

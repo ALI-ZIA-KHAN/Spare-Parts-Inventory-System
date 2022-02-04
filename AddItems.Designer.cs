@@ -99,7 +99,7 @@
             this.label3.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label3.Location = new System.Drawing.Point(401, 246);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(490, 23);
+            this.label3.Size = new System.Drawing.Size(290, 23);
             this.label3.TabIndex = 5;
             this.label3.Text = "Model Name:\r\n";
             // 
@@ -120,7 +120,7 @@
             this.label4.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label4.Location = new System.Drawing.Point(791, 246);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(465, 23);
+            this.label4.Size = new System.Drawing.Size(279, 23);
             this.label4.TabIndex = 7;
             this.label4.Text = "Quantity:";
             // 

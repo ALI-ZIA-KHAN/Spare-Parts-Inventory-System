@@ -15,8 +15,7 @@ namespace TwenstyFirstJan
     public partial class Additems : Form
     {
 
-        SqlCommand cmd;
-        SqlConnection con;
+        
         //SqlDataAdapter da;
 
         public Additems()
@@ -39,6 +38,8 @@ namespace TwenstyFirstJan
             // add with value in cmd param
             try
             {
+                SqlCommand cmd;
+                SqlConnection con;
                 con = new SqlConnection(@"Server=tcp:masamual.database.windows.net,1433;Initial Catalog=alidb;Persist Security Info=False;User ID=ali;Password=Adminaccount@101;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
                 con.Open();
                 cmd = new SqlCommand("INSERT INTO product_table(companyName,partName,modelName,stock_quantity,price,rack,maxStock) VALUES (@companyName,@partName,@modelName,@stock_quantity,@price,@rack,@maxStock)", con);

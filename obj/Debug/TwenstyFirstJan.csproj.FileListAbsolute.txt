@@ -80,3 +80,5 @@ C:\Users\Shumail\Desktop\sameed59\Spare-Parts-Inventory-System\obj\Debug\Twensty
 C:\Users\Shumail\Desktop\sameed59\Spare-Parts-Inventory-System\obj\Debug\TwenstyFirstJan.csproj.CopyComplete
 C:\Users\Shumail\Desktop\sameed59\Spare-Parts-Inventory-System\obj\Debug\TwenstyFirstJan.exe
 C:\Users\Shumail\Desktop\sameed59\Spare-Parts-Inventory-System\obj\Debug\TwenstyFirstJan.pdb
+C:\Users\Shumail\Desktop\sameed59\Spare-Parts-Inventory-System\obj\Debug\TwenstyFirstJan.update.resources
+C:\Users\Shumail\Desktop\sameed59\Spare-Parts-Inventory-System\obj\Debug\TwenstyFirstJan.updateinput.resources
