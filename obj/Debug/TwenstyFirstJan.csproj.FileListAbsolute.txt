@@ -111,3 +111,32 @@ C:\Users\Shumail\Desktop\Spare-Parts-Inventory-System\obj\Debug\TwenstyFirstJan.
 C:\Users\Shumail\Desktop\Spare-Parts-Inventory-System\obj\Debug\TwenstyFirstJan.csproj.CopyComplete
 C:\Users\Shumail\Desktop\Spare-Parts-Inventory-System\obj\Debug\TwenstyFirstJan.exe
 C:\Users\Shumail\Desktop\Spare-Parts-Inventory-System\obj\Debug\TwenstyFirstJan.pdb
+C:\Users\Shumail\Desktop\save proj non git\Spare-Parts-Inventory-System\bin\Debug\TwenstyFirstJan.exe.config
+C:\Users\Shumail\Desktop\save proj non git\Spare-Parts-Inventory-System\bin\Debug\TwenstyFirstJan.exe
+C:\Users\Shumail\Desktop\save proj non git\Spare-Parts-Inventory-System\bin\Debug\TwenstyFirstJan.pdb
+C:\Users\Shumail\Desktop\save proj non git\Spare-Parts-Inventory-System\bin\Debug\EntityFramework.dll
+C:\Users\Shumail\Desktop\save proj non git\Spare-Parts-Inventory-System\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Shumail\Desktop\save proj non git\Spare-Parts-Inventory-System\bin\Debug\System.Text.RegularExpressions.dll
+C:\Users\Shumail\Desktop\save proj non git\Spare-Parts-Inventory-System\bin\Debug\EntityFramework.xml
+C:\Users\Shumail\Desktop\save proj non git\Spare-Parts-Inventory-System\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Shumail\Desktop\save proj non git\Spare-Parts-Inventory-System\obj\Debug\TwenstyFirstJan.csprojAssemblyReference.cache
+C:\Users\Shumail\Desktop\save proj non git\Spare-Parts-Inventory-System\obj\Debug\TwenstyFirstJan.Billing.resources
+C:\Users\Shumail\Desktop\save proj non git\Spare-Parts-Inventory-System\obj\Debug\TwenstyFirstJan.CartForm.resources
+C:\Users\Shumail\Desktop\save proj non git\Spare-Parts-Inventory-System\obj\Debug\TwenstyFirstJan.faltu_screen.resources
+C:\Users\Shumail\Desktop\save proj non git\Spare-Parts-Inventory-System\obj\Debug\TwenstyFirstJan.Form1.resources
+C:\Users\Shumail\Desktop\save proj non git\Spare-Parts-Inventory-System\obj\Debug\TwenstyFirstJan.Additems.resources
+C:\Users\Shumail\Desktop\save proj non git\Spare-Parts-Inventory-System\obj\Debug\TwenstyFirstJan.history1.resources
+C:\Users\Shumail\Desktop\save proj non git\Spare-Parts-Inventory-System\obj\Debug\TwenstyFirstJan.historybydate.resources
+C:\Users\Shumail\Desktop\save proj non git\Spare-Parts-Inventory-System\obj\Debug\TwenstyFirstJan.Login.resources
+C:\Users\Shumail\Desktop\save proj non git\Spare-Parts-Inventory-System\obj\Debug\TwenstyFirstJan.Navigation.resources
+C:\Users\Shumail\Desktop\save proj non git\Spare-Parts-Inventory-System\obj\Debug\TwenstyFirstJan.NewFolder1.DForm.resources
+C:\Users\Shumail\Desktop\save proj non git\Spare-Parts-Inventory-System\obj\Debug\TwenstyFirstJan.Properties.Resources.resources
+C:\Users\Shumail\Desktop\save proj non git\Spare-Parts-Inventory-System\obj\Debug\TwenstyFirstJan.RestockScreen.resources
+C:\Users\Shumail\Desktop\save proj non git\Spare-Parts-Inventory-System\obj\Debug\TwenstyFirstJan.Search_Screen.resources
+C:\Users\Shumail\Desktop\save proj non git\Spare-Parts-Inventory-System\obj\Debug\TwenstyFirstJan.update.resources
+C:\Users\Shumail\Desktop\save proj non git\Spare-Parts-Inventory-System\obj\Debug\TwenstyFirstJan.updateinput.resources
+C:\Users\Shumail\Desktop\save proj non git\Spare-Parts-Inventory-System\obj\Debug\TwenstyFirstJan.csproj.GenerateResource.cache
+C:\Users\Shumail\Desktop\save proj non git\Spare-Parts-Inventory-System\obj\Debug\TwenstyFirstJan.csproj.CoreCompileInputs.cache
+C:\Users\Shumail\Desktop\save proj non git\Spare-Parts-Inventory-System\obj\Debug\TwenstyFirstJan.csproj.CopyComplete
+C:\Users\Shumail\Desktop\save proj non git\Spare-Parts-Inventory-System\obj\Debug\TwenstyFirstJan.exe
+C:\Users\Shumail\Desktop\save proj non git\Spare-Parts-Inventory-System\obj\Debug\TwenstyFirstJan.pdb

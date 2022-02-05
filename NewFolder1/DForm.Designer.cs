@@ -53,7 +53,7 @@
             this.tempbutton.Margin = new System.Windows.Forms.Padding(5);
             this.tempbutton.Name = "tempbutton";
             this.tempbutton.Size = new System.Drawing.Size(212, 35);
-            this.tempbutton.TabIndex = 0;
+            this.tempbutton.TabIndex = 10;
             this.tempbutton.Text = "Confirm Addition";
             this.tempbutton.UseVisualStyleBackColor = false;
             this.tempbutton.Click += new System.EventHandler(this.tempbutton_Click);
@@ -112,6 +112,7 @@
             // 
             // textBox3
             // 
+            this.textBox3.Enabled = false;
             this.textBox3.Location = new System.Drawing.Point(280, 105);
             this.textBox3.Margin = new System.Windows.Forms.Padding(5);
             this.textBox3.Name = "textBox3";
@@ -120,6 +121,7 @@
             // 
             // textBox4
             // 
+            this.textBox4.Enabled = false;
             this.textBox4.Location = new System.Drawing.Point(280, 149);
             this.textBox4.Margin = new System.Windows.Forms.Padding(5);
             this.textBox4.Name = "textBox4";
@@ -134,7 +136,7 @@
             this.textBox1.Margin = new System.Windows.Forms.Padding(5);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(284, 26);
-            this.textBox1.TabIndex = 8;
+            this.textBox1.TabIndex = 9;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
@@ -144,7 +146,7 @@
             this.textBox2.Margin = new System.Windows.Forms.Padding(5);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(284, 26);
-            this.textBox2.TabIndex = 9;
+            this.textBox2.TabIndex = 8;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // backbutton
@@ -155,7 +157,7 @@
             this.backbutton.Margin = new System.Windows.Forms.Padding(5);
             this.backbutton.Name = "backbutton";
             this.backbutton.Size = new System.Drawing.Size(125, 35);
-            this.backbutton.TabIndex = 10;
+            this.backbutton.TabIndex = 25;
             this.backbutton.Text = "Back";
             this.backbutton.UseVisualStyleBackColor = false;
             this.backbutton.Click += new System.EventHandler(this.backbutton_Click);
@@ -170,7 +172,7 @@
             this.button2.Location = new System.Drawing.Point(593, 393);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(43, 40);
-            this.button2.TabIndex = 25;
+            this.button2.TabIndex = 26;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 

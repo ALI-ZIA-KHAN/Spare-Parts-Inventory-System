@@ -101,5 +101,39 @@ namespace TwenstyFirstJan
             this.Hide();
             n1.Show();
         }
+
+        /*/private void button4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //transfer data from temp to log
+                SqlCommand cmd;
+                SqlConnection con;
+                con = new SqlConnection(@"Server=tcp:masamual.database.windows.net,1433;Initial Catalog=alidb;Persist Security Info=False;User ID=ali;Password=Adminaccount@101;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+                con.Open();
+                cmd = new SqlCommand("UPDATE product_table  SET  stock_quantity = stock_quantity - e.quantity FROM   temporary_table as e WHERE  e.Id = product_table.productId; insert into log_table(Id,sold_quantity,sold_price,customer_name,customer_address,invoice,sold_date)  select Id, quantity,price,@cust,@addr,@inv, @date from temporary_table; delete temporary_table;", con);
+                cmd.Parameters.AddWithValue("@cust", "");
+                cmd.Parameters.AddWithValue("@addr", "");
+                int invval = int.Parse(textBox2.Text);
+                cmd.Parameters.AddWithValue("@inv", invval);
+                cmd.Parameters.AddWithValue("@date", dateTimePicker1.Value.Date.ToString());
+
+                var i = cmd.ExecuteNonQuery();
+                if (i != 0)
+                {
+                    MessageBox.Show("Data is succcessfully saved");
+
+                }
+                con.Close();
+
+                Billing b2 = new Billing();
+                b2.Show();
+                this.Hide();
+            }
+            catch
+            {
+                MessageBox.Show("Retry");
+            }
+        }*/
     }
 }

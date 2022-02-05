@@ -172,7 +172,7 @@ namespace TwenstyFirstJan
                 }
                 con.Close();
 
-                Billing b2 = new Billing();
+                Search_Screen b2 = new Search_Screen();
                 b2.Show();
                 this.Hide();
             }
@@ -197,7 +197,7 @@ namespace TwenstyFirstJan
             //printPreviewDialog1.ShowDialog();
             
             int height = dataGridView1.Height;
-            dataGridView1.Height =37+dataGridView1.RowCount * dataGridView1.RowTemplate.Height * 4;
+            dataGridView1.Height =37+(dataGridView1.RowCount+2) * dataGridView1.RowTemplate.Height * 4;
             bitmap = new Bitmap(dataGridView1.Width, dataGridView1.Height);
             dataGridView1.DrawToBitmap(bitmap, new Rectangle(0,150 , dataGridView1.Width, dataGridView1.Height));
             printPreviewDialog1.PrintPreviewControl.Zoom = 1;

@@ -23,6 +23,8 @@ namespace TwenstyFirstJan
         private void RestockScreen_Load(object sender, EventArgs e)
         {
             bu();
+            AddHeaderCheckBox();
+            HeaderCheckBox.MouseClick += new MouseEventHandler(HeaderCheckBox_MouseClick);
             /*
             try
             {
@@ -129,24 +131,57 @@ namespace TwenstyFirstJan
                 sqlconn.Open();
                 SqlCommand cmd = new SqlCommand();
 
+
+                for (int i = 0; i < dataGridView1.Rows.Count ; i++)
+                {
+                    DataGridViewRow row = dataGridView1.Rows[i];
+                    if (Convert.ToBoolean(row.Cells["chk"].Value) == true)//(bool)(row.Cells["chk"]).Value || (CheckState)row.Cells["chk"].Value == CheckState.Checked)
+                    {
+                        // Do something
+                        cmd = new SqlCommand("update product_table set stock_quantity = stock_quantity + @offset where productId = @prodid1;", sqlconn);
+
+                        cmd.Parameters.AddWithValue("@prodid1", row.Cells[1].Value.ToString());
+                        cmd.Parameters.AddWithValue("@offset", row.Cells[6].Value.ToString());
+                        //var j = 
+                        cmd.ExecuteNonQuery();
+                        /*if (j == 0)
+                        {
+                            MessageBox.Show("some item can not be restocked \n {0}", dataGridView1.CurrentRow.Cells[2].Value.ToString());
+
+                        }*/
+                    }
+                }
+                MessageBox.Show("Restocked Successfully");
+
+
+                /*
                 string str = "(";
-                List<DataGridViewRow> rows_with_checked_column = new List<DataGridViewRow>();
+                //List<DataGridViewRow> rows_with_checked_column = new List<DataGridViewRow>();
                 foreach (DataGridViewRow row in dataGridView1.Rows)
                 {
                     if (Convert.ToBoolean(row.Cells["chk"].Value) == true)
                     {
-                        str += row.Cells[1].Value.ToString() + ",";
+                        //str += row.Cells[1].Value.ToString() + ",";
                         //rows_with_checked_column.Add(row);
+                        cmd.Parameters.AddWithValue("@id", row.Cells[0].Value.ToString());
+                        cmd.Parameters.AddWithValue("@offset", row.Cells[5].Value.ToString());
+                        var i = cmd.ExecuteNonQuery();
+                        if (i == 0)
+                        {
+                            MessageBox.Show("some item can not be restocked \n {0}", dataGridView1.CurrentRow.Cells[2].Value.ToString());
+
+                        }
+                        
                     }
                 }
                 str += "0)";
+                */
+                //cmd = new SqlCommand("update product_table set stock_quantity = maxStock where productId in " + str + ";", sqlconn);
 
-                cmd = new SqlCommand("update product_table set stock_quantity = maxStock where productId in " + str + ";", sqlconn);
-
-                SqlDataAdapter sdr = new SqlDataAdapter(cmd);
-                DataTable dt = new DataTable();
-                sdr.Fill(dt);
-                dataGridView1.DataSource = dt;
+                //SqlDataAdapter sdr = new SqlDataAdapter(cmd);
+                //DataTable dt = new DataTable();
+                //sdr.Fill(dt);
+                //dataGridView1.DataSource = dt;
                 sqlconn.Close();
 
                 RestockScreen r = new RestockScreen();
@@ -155,6 +190,8 @@ namespace TwenstyFirstJan
             }
             catch
             {
+                //MessageBox.Show("some item can not be restocked \n {0}", dataGridView1.CurrentRow.Cells[3].Value.ToString());
+
                 MessageBox.Show("Retry");
             }
         }
