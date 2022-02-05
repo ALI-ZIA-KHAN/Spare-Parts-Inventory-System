@@ -22,6 +22,8 @@ namespace TwenstyFirstJan
 
         private void RestockScreen_Load(object sender, EventArgs e)
         {
+            bu();
+            /*
             try
             {
                 AddHeaderCheckBox();
@@ -43,6 +45,8 @@ namespace TwenstyFirstJan
             {
                 MessageBox.Show("Retry");
             }
+
+            */
         }
 
         CheckBox HeaderCheckBox = null;
@@ -81,7 +85,7 @@ namespace TwenstyFirstJan
                 SqlConnection sqlconn;
                 connetionString = "Server = tcp:masamual.database.windows.net,1433; Initial Catalog = alidb; Persist Security Info = False; User ID = ali; Password = Adminaccount@101; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30; ";
                 sqlconn = new SqlConnection(connetionString);
-                string sqlquery = "select productId, companyName as 'Company Name', partName as 'Part Name', modelName as 'Model Name', stock_quantity as 'Quantity left in Stock' , maxStock as 'Max Stock' from product_table where companyName like '%" + companytextbox.Text.ToString().ToLower() + "%' and partName like '%" + partnametextbox.Text.ToString().ToLower() + "%' and modelName like '%" + modelno.Text.ToString().ToLower() + "%'";
+                string sqlquery = "select productId as 'Id', companyName as 'Company Name', partName as 'Part Name', modelName as 'Model Name', stock_quantity as 'Quantity left in Stock' , maxStock - stock_quantity as 'Ordered Amount' , maxStock as 'Max Stock' from product_table where companyName like '%" + companytextbox.Text.ToString().ToLower() + "%' and partName like '%" + partnametextbox.Text.ToString().ToLower() + "%' and modelName like '%" + modelno.Text.ToString().ToLower() + "%'";
                 sqlconn.Open();
                 SqlCommand sqlcomm = new SqlCommand(sqlquery, sqlconn);
 

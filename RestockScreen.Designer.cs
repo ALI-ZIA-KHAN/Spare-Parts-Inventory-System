@@ -83,7 +83,7 @@
             this.companytextbox.Multiline = true;
             this.companytextbox.Name = "companytextbox";
             this.companytextbox.Size = new System.Drawing.Size(219, 31);
-            this.companytextbox.TabIndex = 26;
+            this.companytextbox.TabIndex = 24;
             this.companytextbox.TextChanged += new System.EventHandler(this.companytextbox_TextChanged);
             // 
             // modelno
@@ -92,7 +92,7 @@
             this.modelno.Multiline = true;
             this.modelno.Name = "modelno";
             this.modelno.Size = new System.Drawing.Size(219, 30);
-            this.modelno.TabIndex = 25;
+            this.modelno.TabIndex = 26;
             this.modelno.TextChanged += new System.EventHandler(this.modelno_TextChanged);
             // 
             // partnametextbox
@@ -101,7 +101,7 @@
             this.partnametextbox.Multiline = true;
             this.partnametextbox.Name = "partnametextbox";
             this.partnametextbox.Size = new System.Drawing.Size(219, 30);
-            this.partnametextbox.TabIndex = 24;
+            this.partnametextbox.TabIndex = 25;
             this.partnametextbox.TextChanged += new System.EventHandler(this.partnametextbox_TextChanged);
             // 
             // dataGridView1

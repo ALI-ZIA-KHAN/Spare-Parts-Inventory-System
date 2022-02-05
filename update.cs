@@ -22,7 +22,7 @@ namespace TwenstyFirstJan
 
         private void update_Load(object sender, EventArgs e)
         {
-            //bu();
+            bu();
         }
 
         public void bu()
@@ -111,6 +111,13 @@ namespace TwenstyFirstJan
                 // FK banai hui log table main tou comflict aa raha kabhi.
                 MessageBox.Show("Product already sold, cannot be deleted!");
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Navigation newForm = new Navigation();
+            newForm.Show();
+            this.Hide();
         }
     }
 }
