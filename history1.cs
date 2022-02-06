@@ -14,9 +14,9 @@ namespace TwenstyFirstJan
 {
     public partial class history1 : Form
     {
-        SqlCommand cmd;
-        SqlConnection con;
-        SqlDataAdapter da;
+        //SqlCommand cmd;
+        //SqlConnection con;
+        //SqlDataAdapter da;
         public history1()
         {
             InitializeComponent();
@@ -28,31 +28,37 @@ namespace TwenstyFirstJan
         }
         public void hsbu()
         {
-            string connetionString;
-            SqlConnection cnn;
-            connetionString = "Server = tcp:masamual.database.windows.net,1433; Initial Catalog = alidb; Persist Security Info = False; User ID = ali; Password = Adminaccount@101; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30; ";
-            cnn = new SqlConnection(connetionString);
-            
-            cnn.Open();
-            SqlCommand cmd = new SqlCommand();
-
-            if (String.IsNullOrEmpty(textBox4.Text))
+            try
             {
-                cmd = new SqlCommand("select p.partName as [Part Name], p.companyName as [Company Name], p.modelName as [Model Name], p.stock_quantity as [Qty in Stock], p.price as Price, e. invoice as [Invoice no.], e.sold_price as [Sold Price], e.sold_quantity as [Sold Quantity], e.sold_date as Date, e.customer_name as [Customer Name], e.customer_address as [Customer Address] from product_table p, log_table e where ( p.productID = e.id) and(p.partName like '%" + textBox1.Text + "%' and p.companyName like '%" + textBox2.Text + "%' and p.modelName like '%" + textBox3.Text + "%') ;", cnn);
+                string connetionString;
+                SqlConnection cnn;
+                connetionString = "Server = tcp:masamual.database.windows.net,1433; Initial Catalog = alidb; Persist Security Info = False; User ID = ali; Password = Adminaccount@101; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30; ";
+                cnn = new SqlConnection(connetionString);
+
+                cnn.Open();
+                SqlCommand cmd = new SqlCommand();
+
+                if (String.IsNullOrEmpty(textBox4.Text))
+                {
+                    cmd = new SqlCommand("select p.partName as [Part Name], p.companyName as [Company Name], p.modelName as [Model Name], p.stock_quantity as [Qty in Stock], p.price as Price, e. invoice as [Invoice no.], e.sold_price as [Sold Price], e.sold_quantity as [Sold Quantity], e.sold_date as Date, e.customer_name as [Customer Name], e.customer_address as [Customer Address] from product_table p, log_table e where ( p.productID = e.id) and(p.partName like '%" + textBox1.Text + "%' and p.companyName like '%" + textBox2.Text + "%' and p.modelName like '%" + textBox3.Text + "%') ;", cnn);
+                }
+                else
+                {
+                    cmd = new SqlCommand("select p.partName as [Part Name], p.companyName as [Company Name], p.modelName as [Model Name], p.stock_quantity as [Qty in Stock], p.price as Price, e. invoice as [Invoice no.], e.sold_price as [Sold Price], e.sold_quantity as [Sold Quantity], e.sold_date as Date, e.customer_name as [Customer Name], e.customer_address as [Customer Address] from product_table p, log_table e where (e.invoice = @inv and p.productID = e.id) and(p.partName like '%" + textBox1.Text + "%' and p.companyName like '%" + textBox2.Text + "%' and p.modelName like '%" + textBox3.Text + "%') ;", cnn);
+                    int invvalue = int.Parse(textBox4.Text);
+                    cmd.Parameters.AddWithValue("@inv", invvalue);
+                }
+
+                SqlDataAdapter sqd = new SqlDataAdapter(cmd);
+                DataTable dtbl = new DataTable();
+                sqd.Fill(dtbl);
+                dataGridView1.DataSource = dtbl;
+                cnn.Close();
             }
-            else
+            catch
             {
-                cmd = new SqlCommand("select p.partName as [Part Name], p.companyName as [Company Name], p.modelName as [Model Name], p.stock_quantity as [Qty in Stock], p.price as Price, e. invoice as [Invoice no.], e.sold_price as [Sold Price], e.sold_quantity as [Sold Quantity], e.sold_date as Date, e.customer_name as [Customer Name], e.customer_address as [Customer Address] from product_table p, log_table e where (e.invoice = @inv and p.productID = e.id) and(p.partName like '%" + textBox1.Text + "%' and p.companyName like '%" + textBox2.Text + "%' and p.modelName like '%" + textBox3.Text + "%') ;", cnn);
-                int invvalue = int.Parse(textBox4.Text);
-                cmd.Parameters.AddWithValue("@inv", invvalue);
+                MessageBox.Show("Retry");
             }
-
-            SqlDataAdapter sqd = new SqlDataAdapter(cmd);
-            DataTable dtbl = new DataTable();
-            sqd.Fill(dtbl);
-            dataGridView1.DataSource = dtbl;
-            cnn.Close();
-
         }
         private void button1_Click(object sender, EventArgs e)
         {

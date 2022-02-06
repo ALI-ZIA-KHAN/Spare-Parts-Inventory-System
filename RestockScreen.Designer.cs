@@ -83,7 +83,7 @@
             this.companytextbox.Multiline = true;
             this.companytextbox.Name = "companytextbox";
             this.companytextbox.Size = new System.Drawing.Size(219, 31);
-            this.companytextbox.TabIndex = 26;
+            this.companytextbox.TabIndex = 24;
             this.companytextbox.TextChanged += new System.EventHandler(this.companytextbox_TextChanged);
             // 
             // modelno
@@ -92,7 +92,7 @@
             this.modelno.Multiline = true;
             this.modelno.Name = "modelno";
             this.modelno.Size = new System.Drawing.Size(219, 30);
-            this.modelno.TabIndex = 25;
+            this.modelno.TabIndex = 26;
             this.modelno.TextChanged += new System.EventHandler(this.modelno_TextChanged);
             // 
             // partnametextbox
@@ -101,20 +101,21 @@
             this.partnametextbox.Multiline = true;
             this.partnametextbox.Name = "partnametextbox";
             this.partnametextbox.Size = new System.Drawing.Size(219, 30);
-            this.partnametextbox.TabIndex = 24;
+            this.partnametextbox.TabIndex = 25;
             this.partnametextbox.TextChanged += new System.EventHandler(this.partnametextbox_TextChanged);
             // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.chk});
-            this.dataGridView1.Location = new System.Drawing.Point(277, 273);
+            this.dataGridView1.Location = new System.Drawing.Point(309, 267);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(841, 296);
+            this.dataGridView1.Size = new System.Drawing.Size(841, 300);
             this.dataGridView1.TabIndex = 30;
             // 
             // chk
@@ -144,7 +145,7 @@
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(1130, 596);
+            this.button2.Location = new System.Drawing.Point(1094, 613);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(56, 40);
             this.button2.TabIndex = 32;
@@ -154,12 +155,13 @@
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.MidnightBlue;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(-2, -1);
+            this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1382, 55);
+            this.label1.Size = new System.Drawing.Size(1349, 55);
             this.label1.TabIndex = 33;
             this.label1.Text = "Restock Items";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -168,6 +170,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1349, 749);
             this.Controls.Add(this.label1);
@@ -182,6 +185,7 @@
             this.Controls.Add(this.partnametextbox);
             this.Name = "RestockScreen";
             this.Text = "RestockScreen";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.RestockScreen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

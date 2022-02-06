@@ -99,7 +99,7 @@
             this.label3.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label3.Location = new System.Drawing.Point(401, 246);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(490, 23);
+            this.label3.Size = new System.Drawing.Size(290, 23);
             this.label3.TabIndex = 5;
             this.label3.Text = "Model Name:\r\n";
             // 
@@ -120,7 +120,7 @@
             this.label4.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label4.Location = new System.Drawing.Point(791, 246);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(465, 23);
+            this.label4.Size = new System.Drawing.Size(279, 23);
             this.label4.TabIndex = 7;
             this.label4.Text = "Quantity:";
             // 
@@ -215,13 +215,14 @@
             // label8
             // 
             this.label8.BackColor = System.Drawing.Color.MidnightBlue;
+            this.label8.Dock = System.Windows.Forms.DockStyle.Top;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Location = new System.Drawing.Point(1, -2);
+            this.label8.Location = new System.Drawing.Point(0, 0);
             this.label8.Margin = new System.Windows.Forms.Padding(10, 0, 3, 0);
             this.label8.Name = "label8";
-            this.label8.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
-            this.label8.Size = new System.Drawing.Size(1403, 61);
+            this.label8.Padding = new System.Windows.Forms.Padding(10);
+            this.label8.Size = new System.Drawing.Size(1365, 61);
             this.label8.TabIndex = 17;
             this.label8.Text = "Add Items";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

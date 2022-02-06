@@ -19,20 +19,53 @@ namespace TwenstyFirstJan.NewFolder1
         {
             InitializeComponent();
         }
-        private int chkqt()
+        private void chkqt()
         {
+            try
+            {
 
-            string mainconn = ConfigurationManager.ConnectionStrings["myCONN"].ConnectionString;
-            SqlConnection sqlconn1 = new SqlConnection(mainconn);
-            string sqlquery1 = "select stock_quantity from product_table where productId = @id ;";
-            
-            sqlconn1.Open();
-            SqlCommand sqlcomm1 = new SqlCommand(sqlquery1, sqlconn1);
-            sqlcomm1.Parameters.AddWithValue("@id",textBox5.Text);
-            object result = sqlcomm1.ExecuteScalar();
-            int value = (int)result;
-            int stock = value;
-            return stock;
+                string mainconn = ConfigurationManager.ConnectionStrings["myCONN"].ConnectionString;
+                SqlConnection sqlconn1 = new SqlConnection(mainconn);
+                string sqlquery1 = "select stock_quantity from product_table where productId = @id ;";
+
+                sqlconn1.Open();
+                SqlCommand sqlcomm1 = new SqlCommand(sqlquery1, sqlconn1);
+                sqlcomm1.Parameters.AddWithValue("@id", textBox5.Text);
+                object result = sqlcomm1.ExecuteScalar();
+                int value = (int)result;
+                int stock = value;
+                //return stock;
+
+                if (qt > stock)
+                {
+                    MessageBox.Show("Not enough in stock \n " + stock.ToString());
+
+                }
+                else
+                {
+                    //string mainconn = ConfigurationManager.ConnectionStrings["myCONN"].ConnectionString;
+                    SqlConnection sqlconn = new SqlConnection(mainconn);
+                    string sqlquery = "insert into temporary_table(Id, quantity, price)values('" + textBox5.Text + "',@qt, '" + textBox1.Text + "')";
+
+                    sqlconn.Open();
+                    SqlCommand sqlcomm = new SqlCommand(sqlquery, sqlconn);
+                    sqlcomm.Parameters.AddWithValue("@qt", qt);
+                    SqlDataAdapter sdr = new SqlDataAdapter(sqlcomm);
+                    DataTable dt = new DataTable();
+                    sdr.Fill(dt);
+                    //MessageBox.Show("Item Added to Cart!");
+                    this.Close();
+                    this.Hide();
+                }
+                //    nechay wala part close() sey uper tyr kerna hai
+                //Search_Screen s2 = new Search_Screen();
+                //this.Hide();
+                //s2.Show();
+            }
+            catch
+            {
+                MessageBox.Show("Retry");
+            }
         }
         private void tempbutton_Click(object sender, EventArgs e)
         {
@@ -44,51 +77,22 @@ namespace TwenstyFirstJan.NewFolder1
             {
                 qt = int.Parse(textBox2.Text);
             }
-            //public void checkquantity(){   }
-            int stock=chkqt();
-            // int priceval = int.Parse(textBox1.Text);
-            if (qt > stock)
-            {
-                MessageBox.Show("Not enough in stock \n " + stock.ToString());
 
-            }
-            else
-            {
-                string mainconn = ConfigurationManager.ConnectionStrings["myCONN"].ConnectionString;
-                SqlConnection sqlconn = new SqlConnection(mainconn);
-                // string sqlquery = "Select * from [dbo].[product_table] ";
-
-                string sqlquery = "insert into temporary_table(Id, quantity, price)values('" + textBox5.Text + "',@qt, '" + textBox1.Text + "')";
-
-                sqlconn.Open();
-                SqlCommand sqlcomm = new SqlCommand(sqlquery, sqlconn);
-                sqlcomm.Parameters.AddWithValue("@qt", qt);
-                SqlDataAdapter sdr = new SqlDataAdapter(sqlcomm);
-                DataTable dt = new DataTable();
-                sdr.Fill(dt);
-                MessageBox.Show("Item Added to Cart!");
-                this.Close();
-                
-
-            }
-            Search_Screen s2 = new Search_Screen();
-            this.Hide();
-            s2.Show();
-            
+            chkqt();
         }
 
         private void backbutton_Click(object sender, EventArgs e)
         {
             
-            Search_Screen s2 = new Search_Screen();
-            s2.Show();
+            //Search_Screen s2 = new Search_Screen();
+            //s2.Show();
             this.Hide();
             
         }
 
         private void DForm_Load(object sender, EventArgs e)
         {
-
+            textBox2.Focus();
         }
 
         private void label1_Click(object sender, EventArgs e)

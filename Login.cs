@@ -23,13 +23,13 @@ namespace TwenstyFirstJan
 
 
            if(textBox1.Text=="Sabri" && textBox2.Text == "12345")
-            {
+           {
                 MessageBox.Show("Login Successfully");
                 Search_Screen newForm = new Search_Screen();
                 
                 newForm.Show();
                 this.Hide();
-            }
+           }
             else
             {
                 MessageBox.Show("Incorrect Credentials");
