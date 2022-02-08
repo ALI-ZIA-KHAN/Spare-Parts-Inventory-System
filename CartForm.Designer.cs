@@ -44,6 +44,7 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(160, 135);
@@ -58,9 +59,9 @@
             this.deletebutton.BackColor = System.Drawing.Color.MidnightBlue;
             this.deletebutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deletebutton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.deletebutton.Location = new System.Drawing.Point(952, 551);
+            this.deletebutton.Location = new System.Drawing.Point(851, 551);
             this.deletebutton.Name = "deletebutton";
-            this.deletebutton.Size = new System.Drawing.Size(151, 57);
+            this.deletebutton.Size = new System.Drawing.Size(157, 57);
             this.deletebutton.TabIndex = 1;
             this.deletebutton.Text = "Delete";
             this.deletebutton.UseVisualStyleBackColor = false;
@@ -71,7 +72,7 @@
             this.movetobillbutton.BackColor = System.Drawing.Color.MidnightBlue;
             this.movetobillbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.movetobillbutton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.movetobillbutton.Location = new System.Drawing.Point(591, 551);
+            this.movetobillbutton.Location = new System.Drawing.Point(528, 551);
             this.movetobillbutton.Name = "movetobillbutton";
             this.movetobillbutton.Size = new System.Drawing.Size(201, 57);
             this.movetobillbutton.TabIndex = 2;
@@ -84,7 +85,7 @@
             this.searchscreenbutton.BackColor = System.Drawing.Color.MidnightBlue;
             this.searchscreenbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchscreenbutton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.searchscreenbutton.Location = new System.Drawing.Point(269, 551);
+            this.searchscreenbutton.Location = new System.Drawing.Point(230, 551);
             this.searchscreenbutton.Name = "searchscreenbutton";
             this.searchscreenbutton.Size = new System.Drawing.Size(174, 57);
             this.searchscreenbutton.TabIndex = 3;
@@ -99,9 +100,9 @@
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(1095, 659);
+            this.button2.Location = new System.Drawing.Point(1118, 557);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(46, 40);
+            this.button2.Size = new System.Drawing.Size(52, 44);
             this.button2.TabIndex = 31;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);

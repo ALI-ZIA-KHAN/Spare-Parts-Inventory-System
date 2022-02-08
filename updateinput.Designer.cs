@@ -160,7 +160,7 @@
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(275, 34);
-            this.textBox4.TabIndex = 26;
+            this.textBox4.TabIndex = 40;
             // 
             // label3
             // 

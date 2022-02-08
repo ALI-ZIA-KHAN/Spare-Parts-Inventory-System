@@ -206,7 +206,7 @@
             // 
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label7.Location = new System.Drawing.Point(764, 697);
+            this.label7.Location = new System.Drawing.Point(760, 699);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(128, 23);
             this.label7.TabIndex = 34;
@@ -218,7 +218,7 @@
             this.textBox6.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(898, 692);
+            this.textBox6.Location = new System.Drawing.Point(894, 694);
             this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(158, 28);
@@ -229,9 +229,9 @@
             this.button1.BackColor = System.Drawing.Color.MidnightBlue;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(188, 691);
+            this.button1.Location = new System.Drawing.Point(894, 728);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(155, 38);
+            this.button1.Size = new System.Drawing.Size(158, 38);
             this.button1.TabIndex = 35;
             this.button1.Text = "Clear Bill";
             this.button1.UseVisualStyleBackColor = false;
@@ -242,9 +242,9 @@
             this.button3.BackColor = System.Drawing.Color.MidnightBlue;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(563, 692);
+            this.button3.Location = new System.Drawing.Point(521, 692);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(152, 36);
+            this.button3.Size = new System.Drawing.Size(183, 36);
             this.button3.TabIndex = 37;
             this.button3.Text = "Print";
             this.button3.UseVisualStyleBackColor = false;
@@ -280,6 +280,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -297,9 +298,9 @@
             this.button4.BackColor = System.Drawing.Color.MidnightBlue;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(376, 691);
+            this.button4.Location = new System.Drawing.Point(259, 692);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(162, 36);
+            this.button4.Size = new System.Drawing.Size(183, 36);
             this.button4.TabIndex = 40;
             this.button4.Text = "Add record";
             this.button4.UseVisualStyleBackColor = false;
@@ -310,7 +311,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1189, 749);
+            this.ClientSize = new System.Drawing.Size(1189, 766);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);

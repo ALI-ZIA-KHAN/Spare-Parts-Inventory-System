@@ -97,5 +97,10 @@ namespace TwenstyFirstJan
             newForm.Show();
             this.Hide();
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

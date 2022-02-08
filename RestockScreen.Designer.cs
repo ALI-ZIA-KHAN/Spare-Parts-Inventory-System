@@ -47,9 +47,9 @@
             // 
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label4.Location = new System.Drawing.Point(507, 190);
+            this.label4.Location = new System.Drawing.Point(806, 141);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(131, 32);
+            this.label4.Size = new System.Drawing.Size(122, 32);
             this.label4.TabIndex = 29;
             this.label4.Text = "Model Name:\r\n";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -58,7 +58,7 @@
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label3.Location = new System.Drawing.Point(507, 146);
+            this.label3.Location = new System.Drawing.Point(297, 139);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(112, 32);
             this.label3.TabIndex = 28;
@@ -69,9 +69,9 @@
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label2.Location = new System.Drawing.Point(507, 98);
+            this.label2.Location = new System.Drawing.Point(292, 94);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(159, 32);
+            this.label2.Size = new System.Drawing.Size(144, 32);
             this.label2.TabIndex = 27;
             this.label2.Text = "Company Name:\r\n";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -79,16 +79,16 @@
             // 
             // companytextbox
             // 
-            this.companytextbox.Location = new System.Drawing.Point(667, 98);
+            this.companytextbox.Location = new System.Drawing.Point(442, 94);
             this.companytextbox.Multiline = true;
             this.companytextbox.Name = "companytextbox";
-            this.companytextbox.Size = new System.Drawing.Size(219, 31);
+            this.companytextbox.Size = new System.Drawing.Size(711, 31);
             this.companytextbox.TabIndex = 24;
             this.companytextbox.TextChanged += new System.EventHandler(this.companytextbox_TextChanged);
             // 
             // modelno
             // 
-            this.modelno.Location = new System.Drawing.Point(667, 190);
+            this.modelno.Location = new System.Drawing.Point(934, 141);
             this.modelno.Multiline = true;
             this.modelno.Name = "modelno";
             this.modelno.Size = new System.Drawing.Size(219, 30);
@@ -97,10 +97,10 @@
             // 
             // partnametextbox
             // 
-            this.partnametextbox.Location = new System.Drawing.Point(667, 146);
+            this.partnametextbox.Location = new System.Drawing.Point(442, 139);
             this.partnametextbox.Multiline = true;
             this.partnametextbox.Name = "partnametextbox";
-            this.partnametextbox.Size = new System.Drawing.Size(219, 30);
+            this.partnametextbox.Size = new System.Drawing.Size(340, 30);
             this.partnametextbox.TabIndex = 25;
             this.partnametextbox.TextChanged += new System.EventHandler(this.partnametextbox_TextChanged);
             // 
@@ -112,10 +112,10 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.chk});
-            this.dataGridView1.Location = new System.Drawing.Point(309, 267);
+            this.dataGridView1.Location = new System.Drawing.Point(309, 194);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(841, 300);
+            this.dataGridView1.Size = new System.Drawing.Size(882, 413);
             this.dataGridView1.TabIndex = 30;
             // 
             // chk
@@ -130,9 +130,9 @@
             this.rsbutton.BackColor = System.Drawing.Color.MidnightBlue;
             this.rsbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rsbutton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.rsbutton.Location = new System.Drawing.Point(643, 609);
+            this.rsbutton.Location = new System.Drawing.Point(646, 649);
             this.rsbutton.Name = "rsbutton";
-            this.rsbutton.Size = new System.Drawing.Size(155, 49);
+            this.rsbutton.Size = new System.Drawing.Size(173, 49);
             this.rsbutton.TabIndex = 31;
             this.rsbutton.Text = "Restock";
             this.rsbutton.UseVisualStyleBackColor = false;
@@ -145,7 +145,7 @@
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(1094, 613);
+            this.button2.Location = new System.Drawing.Point(1097, 653);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(56, 40);
             this.button2.TabIndex = 32;

@@ -100,7 +100,7 @@
             this.label2.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label2.Location = new System.Drawing.Point(180, 74);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(159, 30);
+            this.label2.Size = new System.Drawing.Size(149, 30);
             this.label2.TabIndex = 31;
             this.label2.Text = "Company Name:\r\n";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
