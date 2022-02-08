@@ -55,11 +55,12 @@ namespace TwenstyFirstJan.NewFolder1
                     sdr.Fill(dt);
                     //MessageBox.Show("Item Added to Cart!");
                     this.Close();
+                    this.Hide();
                 }
                 //    nechay wala part close() sey uper tyr kerna hai
-                Search_Screen s2 = new Search_Screen();
-                this.Hide();
-                s2.Show();
+                //Search_Screen s2 = new Search_Screen();
+                //this.Hide();
+                //s2.Show();
             }
             catch
             {
@@ -83,15 +84,15 @@ namespace TwenstyFirstJan.NewFolder1
         private void backbutton_Click(object sender, EventArgs e)
         {
             
-            Search_Screen s2 = new Search_Screen();
-            s2.Show();
+            //Search_Screen s2 = new Search_Screen();
+            //s2.Show();
             this.Hide();
             
         }
 
         private void DForm_Load(object sender, EventArgs e)
         {
-
+            textBox2.Focus();
         }
 
         private void label1_Click(object sender, EventArgs e)

@@ -52,17 +52,17 @@ namespace TwenstyFirstJan
         }
         private void companytextbox_TextChanged(object sender, EventArgs e)
         {
-            //bu();
+            bu();
         }
 
         private void modelno_TextChanged(object sender, EventArgs e)
         {
-            //bu();
+            bu();
         }
 
         public void button1_Click(object sender, EventArgs e)
         {
-            //bu();
+            bu();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -88,7 +88,8 @@ namespace TwenstyFirstJan
             f2.textBox4.Text = this.dataGridView1.CurrentRow.Cells[2].Value.ToString();
             f2.textBox5.Text = this.dataGridView1.CurrentRow.Cells[0].Value.ToString();
             f2.Show();
-            this.Hide();
+            f2.textBox2.Focus();
+            //this.Hide();
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -109,6 +110,13 @@ namespace TwenstyFirstJan
             b2.Show();
             this.Hide();
 
+        }
+
+        private void movetobillbutton_Click(object sender, EventArgs e)
+        {
+            Billing b1 = new Billing();
+            this.Hide();
+            b1.Show();
         }
     }
 }

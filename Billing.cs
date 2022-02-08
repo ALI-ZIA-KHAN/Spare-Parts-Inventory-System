@@ -172,7 +172,7 @@ namespace TwenstyFirstJan
                 }
                 con.Close();
 
-                Billing b2 = new Billing();
+                Search_Screen b2 = new Search_Screen();
                 b2.Show();
                 this.Hide();
             }
@@ -197,7 +197,7 @@ namespace TwenstyFirstJan
             //printPreviewDialog1.ShowDialog();
             
             int height = dataGridView1.Height;
-            dataGridView1.Height =37+dataGridView1.RowCount * dataGridView1.RowTemplate.Height * 4;
+            dataGridView1.Height =37+(dataGridView1.RowCount+2) * dataGridView1.RowTemplate.Height * 4;
             bitmap = new Bitmap(dataGridView1.Width, dataGridView1.Height);
             dataGridView1.DrawToBitmap(bitmap, new Rectangle(0,150 , dataGridView1.Width, dataGridView1.Height));
             printPreviewDialog1.PrintPreviewControl.Zoom = 1;
@@ -223,7 +223,7 @@ namespace TwenstyFirstJan
             e.Graphics.DrawString("Contact No:" + textBox5.Text, new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new Point(25, 260));
       //      e.Graphics.DrawString(DashLabel.Text, new Font("Arial", 12), Brushes.Black, new Point(25, 280));
        //    e.Graphics.DrawString(DashLabel.Text, new Font("Arial", 12), Brushes.Black, new Point(25, 600));
-            e.Graphics.DrawString("Total Amount:" + textBox6.Text, new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new Point(500, 630));
+            e.Graphics.DrawString("Total Amount:" + textBox6.Text, new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new Point(500, 1000));
       //      e.Graphics.DrawString(Signature.Text, new Font("Arial", 12), Brushes.Black, new Point(25, 630));
        //     e.Graphics.DrawString(DashLabel.Text, new Font("Arial", 12), Brushes.Black, new Point(25, 650));
         }

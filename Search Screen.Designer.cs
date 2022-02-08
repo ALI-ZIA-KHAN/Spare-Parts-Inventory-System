@@ -40,6 +40,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.movetobillbutton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -90,7 +91,7 @@
             this.button1.BackColor = System.Drawing.Color.MidnightBlue;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(367, 631);
+            this.button1.Location = new System.Drawing.Point(197, 631);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(240, 46);
             this.button1.TabIndex = 4;
@@ -103,7 +104,7 @@
             this.restockbutton.BackColor = System.Drawing.Color.MidnightBlue;
             this.restockbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.restockbutton.ForeColor = System.Drawing.Color.White;
-            this.restockbutton.Location = new System.Drawing.Point(677, 631);
+            this.restockbutton.Location = new System.Drawing.Point(504, 631);
             this.restockbutton.Name = "restockbutton";
             this.restockbutton.Size = new System.Drawing.Size(260, 46);
             this.restockbutton.TabIndex = 6;
@@ -173,6 +174,19 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
+            // movetobillbutton
+            // 
+            this.movetobillbutton.BackColor = System.Drawing.Color.MidnightBlue;
+            this.movetobillbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.movetobillbutton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.movetobillbutton.Location = new System.Drawing.Point(839, 631);
+            this.movetobillbutton.Name = "movetobillbutton";
+            this.movetobillbutton.Size = new System.Drawing.Size(256, 46);
+            this.movetobillbutton.TabIndex = 25;
+            this.movetobillbutton.Text = "Move to  Bill";
+            this.movetobillbutton.UseVisualStyleBackColor = false;
+            this.movetobillbutton.Click += new System.EventHandler(this.movetobillbutton_Click);
+            // 
             // Search_Screen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -180,6 +194,7 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1273, 749);
+            this.Controls.Add(this.movetobillbutton);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -218,5 +233,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button movetobillbutton;
     }
 }
