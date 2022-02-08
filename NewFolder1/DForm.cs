@@ -64,7 +64,11 @@ namespace TwenstyFirstJan.NewFolder1
                     //DataTable dt = new DataTable();
                     //sdr.Fill(dt);
                     //MessageBox.Show("Item Added to Cart!");
+<<<<<<< HEAD
                     //this.Close();
+=======
+                    this.Close();
+>>>>>>> 143d6a6c62a885c4ebeb5436f9ef04da2733dc83
                     this.Hide();
                 }
                 //    nechay wala part close() sey uper tyr kerna hai

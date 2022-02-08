@@ -223,7 +223,11 @@ namespace TwenstyFirstJan
             e.Graphics.DrawString("Contact No:     " + textBox5.Text, new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new Point(25, 260));
       //      e.Graphics.DrawString(DashLabel.Text, new Font("Arial", 12), Brushes.Black, new Point(25, 280));
        //    e.Graphics.DrawString(DashLabel.Text, new Font("Arial", 12), Brushes.Black, new Point(25, 600));
+<<<<<<< HEAD
             e.Graphics.DrawString("Total Amount:  " + textBox6.Text, new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new Point(500, 1000));
+=======
+            e.Graphics.DrawString("Total Amount:" + textBox6.Text, new Font("Arial", 12, FontStyle.Regular), Brushes.Black, new Point(500, 1000));
+>>>>>>> 143d6a6c62a885c4ebeb5436f9ef04da2733dc83
       //      e.Graphics.DrawString(Signature.Text, new Font("Arial", 12), Brushes.Black, new Point(25, 630));
        //     e.Graphics.DrawString(DashLabel.Text, new Font("Arial", 12), Brushes.Black, new Point(25, 650));
         }

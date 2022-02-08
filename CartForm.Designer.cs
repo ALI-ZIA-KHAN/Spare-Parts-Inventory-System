@@ -59,7 +59,11 @@
             this.deletebutton.BackColor = System.Drawing.Color.MidnightBlue;
             this.deletebutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deletebutton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+<<<<<<< HEAD
             this.deletebutton.Location = new System.Drawing.Point(851, 551);
+=======
+            this.deletebutton.Location = new System.Drawing.Point(934, 551);
+>>>>>>> 143d6a6c62a885c4ebeb5436f9ef04da2733dc83
             this.deletebutton.Name = "deletebutton";
             this.deletebutton.Size = new System.Drawing.Size(157, 57);
             this.deletebutton.TabIndex = 1;
@@ -72,7 +76,11 @@
             this.movetobillbutton.BackColor = System.Drawing.Color.MidnightBlue;
             this.movetobillbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.movetobillbutton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+<<<<<<< HEAD
             this.movetobillbutton.Location = new System.Drawing.Point(528, 551);
+=======
+            this.movetobillbutton.Location = new System.Drawing.Point(565, 551);
+>>>>>>> 143d6a6c62a885c4ebeb5436f9ef04da2733dc83
             this.movetobillbutton.Name = "movetobillbutton";
             this.movetobillbutton.Size = new System.Drawing.Size(201, 57);
             this.movetobillbutton.TabIndex = 2;
